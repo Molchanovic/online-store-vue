@@ -6,7 +6,7 @@
   </header>
 </template>
 <script>
-export default defineComponent({
+export default ({
   props: {
     title: {
       type: String,
@@ -19,3 +19,6 @@ export default defineComponent({
  }
 })
 </script>
+<style src="./style.scss" lang="scss" scoped>
+
+</style>
