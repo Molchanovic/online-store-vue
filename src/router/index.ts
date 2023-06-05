@@ -13,6 +13,12 @@ const routes: Array<RouteRecordRaw> = [
     meta: { layout: "empty" },
     component: () => "../views/Basket.vue",
   },
+  {
+    path: "/button",
+    name: "button",
+    meta: { layout: "main" },
+    component: () => "../views/Button.vue",
+  },
 ];
 
 const router = createRouter({

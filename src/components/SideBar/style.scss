@@ -1,0 +1,17 @@
+.sidebar {
+  background-color: rgba(110, 224, 140, 1);
+  box-shadow: 10px 12px 23px 0px rgba(34, 60, 80, 0.2);
+  padding: 40px 20px;
+  position: fixed;
+  top: 60px;
+  left: 0px;
+  bottom: 0;
+}
+.sidebar-nav {
+}
+.sidebar-link {
+  font-size: 20px;
+  line-height: 27px;
+  display: block;
+  padding: 10px;
+}
