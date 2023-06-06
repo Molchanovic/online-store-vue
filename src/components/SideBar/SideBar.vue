@@ -13,7 +13,4 @@ const links = ref([
   {name: 'Select', href: '/select'},
 ])
 </script>
-
-<style src="./style.scss" scoped lang="scss">
-
-</style>
+<style src="./style.scss" scoped lang="scss"></style>

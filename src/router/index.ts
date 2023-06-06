@@ -11,13 +11,13 @@ const routes: Array<RouteRecordRaw> = [
     path: "/basket",
     name: "basket",
     meta: { layout: "empty" },
-    component: () => "../views/Basket.vue",
+    component: () => import ("../views/BasketPage.vue"),
   },
   {
     path: "/button",
     name: "button",
     meta: { layout: "main" },
-    component: () => "../views/Button.vue",
+    component: () => import ('../views/ButtonPage.vue'),
   },
 ];
 

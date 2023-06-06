@@ -1,9 +1,11 @@
 <template>
   <UiHeader />
-  <SideBar />
-  <main class="main-block">
-    <router-view />
-  </main>
+  <div class="main-wrapper">
+    <SideBar />
+    <main class="main-block">
+      <router-view />
+    </main>
+  </div>
 </template>
 <script>
 import UiHeader from "../components/header/UiHeader.vue";
@@ -19,3 +21,15 @@ export default {
   }
 };
 </script>
+<style scoped lang="scss">
+  .main-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+
+    main {
+      flex: 1 1 auto;
+      padding: 20px;
+    }
+  }
+</style>
