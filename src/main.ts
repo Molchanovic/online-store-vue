@@ -4,5 +4,5 @@ import router from "./router";
 import store from "./store";
 import "@/assets/style/zeroing.scss";
 import "@/assets/style/fonts.scss";
-
+import "@/assets/style/base.scss";
 createApp(App).use(store).use(router).mount("#app");

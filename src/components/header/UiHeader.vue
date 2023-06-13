@@ -6,19 +6,15 @@
   </header>
 </template>
 <script>
-export default ({
+export default {
   props: {
     title: {
       type: String,
-    }
+    },
   },
- data() {
-  return {
-
-  }
- }
-})
+  data() {
+    return {};
+  },
+};
 </script>
-<style src="./style.scss" lang="scss" scoped>
-
-</style>
+<style src="./style.scss" lang="scss" scoped></style>

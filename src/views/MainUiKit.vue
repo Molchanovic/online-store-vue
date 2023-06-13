@@ -1,10 +1,22 @@
 <template>
   <div class="block-main">
-    <h1>
-      w12312e1232312 123123123 123 123 123 123 123 123 23 23 123 2 lorem Lorem
-      ipsum dolor sit amet consectetur, adipisicing elit. Rem ad inventore
-      reiciendis quod labore pariatur odit quisquam voluptatibus delectus fuga,
-      laboriosam, similique est eos mollitia neque suscipit vel a incidunt! w
-    </h1>
+    <h1>Ui Kit By Ilya Molchanov</h1>
+    <p>Полный кастомный ui kit</p>
   </div>
 </template>
+<style scoped lang="scss">
+@import "../assets/style/variables.scss";
+.block-main {
+  color: $color-white-green;
+  h1 {
+    font-size: 48px;
+    line-height: 57px;
+  }
+
+  p {
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 50px;
+  }
+}
+</style>

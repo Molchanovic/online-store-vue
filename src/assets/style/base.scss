@@ -1,0 +1,28 @@
+@import "./variables.scss";
+hr {
+  border: 2px solid $color-blue;
+  border-radius: 5px;
+  margin: 20px 0px;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 57px;
+  color: $color-blue;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 32px;
+  color: $color-blue;
+  margin-top: 20px;
+
+  &:nth-child(odd) {
+    color: $color-dark;
+  }
+}
+
+button {
+  margin-right: 10px;
+  margin-top: 10px;
+}
