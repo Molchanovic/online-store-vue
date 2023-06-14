@@ -1,5 +1,5 @@
 <template>
-  <div class="button-wrapper">
+  <div class="wrapper-main">
     <h1>Button</h1>
     <hr />
     <h2>Colors</h2>

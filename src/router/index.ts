@@ -8,10 +8,10 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("../views/MainUiKit.vue"), //*Динамический импорт компонента в роутере
   },
   {
-    path: "/basket",
-    name: "basket",
-    meta: { layout: "empty" },
-    component: () => import ("../views/BasketPage.vue"),
+    path: "/checkbox",
+    name: "checkbox",
+    meta: { layout: "main" },
+    component: () => import ("../views/CheckBox.vue"),
   },
   {
     path: "/button",
