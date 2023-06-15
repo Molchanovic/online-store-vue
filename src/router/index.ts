@@ -11,13 +11,19 @@ const routes: Array<RouteRecordRaw> = [
     path: "/checkbox",
     name: "checkbox",
     meta: { layout: "main" },
-    component: () => import ("../views/CheckBox.vue"),
+    component: () => import("../views/CheckBox.vue"),
   },
   {
     path: "/button",
     name: "button",
     meta: { layout: "main" },
-    component: () => import ('../views/ButtonPage.vue'),
+    component: () => import("../views/ButtonPage.vue"),
+  },
+  {
+    path: "/progressbar",
+    name: "progressbar",
+    meta: { layout: "main" },
+    component: () => import("../views/ProgressBar.vue"),
   },
 ];
 

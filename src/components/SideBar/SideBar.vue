@@ -17,6 +17,7 @@ import { ref } from "vue";
 const links = ref([
   { name: "Button", href: "/button" },
   { name: "CheckBox", href: "/checkbox" },
+  { name: "ProgressBar", href: "/progressbar" },
 ]);
 </script>
 <style src="./style.scss" scoped lang="scss"></style>
