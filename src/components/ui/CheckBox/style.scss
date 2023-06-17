@@ -1,0 +1,44 @@
+@import "../../../assets/style/variables.scss";
+
+.checkbox {
+  margin: 0px 10px 10px 0px;
+  display: inline-block;
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+  }
+
+  &__check {
+    transition: 0.3s;
+    display: inline-block;
+    border-radius: 6px;
+    border: 2px solid $color-grey;
+    width: 20px;
+    height: 20px;
+
+    svg {
+      opacity: 0;
+    }
+  }
+
+  &__text {
+    transition: 0.3s;
+    margin-left: 6px;
+    color: $color-dark;
+  }
+}
+.checkbox__input:checked + .checkbox__label {
+  span {
+    border-color: $color-dark;
+    background-color: $color-dark;
+
+    svg {
+      fill: #fff;
+      opacity: 1;
+    }
+  }
+}
