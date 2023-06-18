@@ -1,12 +1,14 @@
 <template>
-  <div class="checkbox">
+  <div class="checkbox" :class="{ disabled: disabled }">
     <input
+      :disabled="disabled"
       class="checkbox__input"
       type="checkbox"
       :name="name"
       :id="id"
       :value="value"
-      @change="$emit('change')"
+      @change="$emit('changeBox')"
+      :checked="checked"
     />
     <label class="checkbox__label" :for="id">
       <span class="checkbox__check">
@@ -39,9 +41,14 @@ const props = defineProps({
   },
   checked: {
     type: Boolean,
+    default: false,
   },
   value: {
     type: String || Number,
+  },
+  disabled: {
+    type: Boolean,
+    default: false,
   },
 });
 </script>

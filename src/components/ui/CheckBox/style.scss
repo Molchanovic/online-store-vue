@@ -30,6 +30,12 @@
     margin-left: 6px;
     color: $color-dark;
   }
+
+  &.disabled {
+    opacity: 0.5;
+    cursor: nw-resize;
+    pointer-events: none;
+  }
 }
 .checkbox__input:checked + .checkbox__label {
   span {
@@ -40,5 +46,11 @@
       fill: #fff;
       opacity: 1;
     }
+  }
+}
+
+.checkbox-group {
+  .checkbox {
+    display: block;
   }
 }
