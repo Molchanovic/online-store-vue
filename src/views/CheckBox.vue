@@ -29,7 +29,6 @@
     />
     <div class="result">
       <span>Выбрано:</span>
-
       <div>
         <p v-for="mark of selectedMark" :key="mark.id">{{ mark.name }}</p>
       </div>
@@ -39,13 +38,21 @@
 <script>
 import UiCheckBox from "../components/ui/CheckBox/UiCheckBox.vue";
 import UiCheckBoxGroup from "../components/ui/CheckBox/UiCheckBoxGroup.vue";
-import { ref } from "vue";
+import { useRouter, useRoute } from "vue-router";
+import { onMounted, ref } from "vue";
 export default {
   components: {
     UiCheckBox,
     UiCheckBoxGroup,
   },
-  setup() {
+  setup(props, context) {
+    const router = useRouter();
+    const route = useRoute();
+
+    onMounted(() => {
+      console.log(router);
+    });
+
     const isChecked = ref(false);
     const isCheckedTwo = ref(false);
     const selectedMark = ref([
